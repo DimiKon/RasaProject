@@ -1,0 +1,6 @@
+[
+  {
+    "name": "release_date",
+    "pattern": "[0-9]{4}"
+  }
+]

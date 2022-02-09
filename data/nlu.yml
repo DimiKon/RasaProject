@@ -1,0 +1,139 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - γεια σου μποτ
+    - γεια σου σινεμποτ
+    - γεια
+    - αλό bot
+    - γεια σου bot
+    - γεια σου σινεμποτ
+    - καλησπέρα σίνεμποτ
+    - καλημέρα cinebot
+    - καλημέρες
+    - καλησπέρες
+    - γεια σίνεμποτ
+    - γεια χαρά σίνεμποτ
+
+- intent: accept_n_thank
+  examples: |
+    - πολύ καλά, ευχαριστώ, μποτ
+    - τέλεια
+    - ευχαριστώ μποτ, θα ρίξω μια ματιά
+    - ευχαριστώ μποτ
+    - μου κάνει
+    - μια χαρά, ευχαριστώ
+    - ευχαριστώ πολύ, μποτ
+    - πολύ καλό, ευχαριστώ μποτ
+    - ευχαριστώ
+    - μια χαρά, ευχαριστώ
+    - τέλεια, ευχαριστώ πολύ
+
+- intent: no_extra_info_n_goodbye
+  examples: |
+    - όχι, ευχαριστώ, γεια σου μποτ
+    - όχι, είμαι οκ, γεια σου
+    - μπα, όχι, καλό βράδυ
+    - όχι, όλα καλά
+    - όχι, τα ξαναλέμε σίνεμποτ
+    - όλα οκ, καλή συνέχεια σίνεμποτ
+
+- intent: get_directions
+  examples: |
+    - πρώτα θέλω να μου πεις πώς μπορούμε να μιλήσουμε
+    - αρχικά τι μπορείς να μου πεις;
+    - για αρχή πες μου τι μπορείς να κάνεις
+    - πρώτα θέλω να μου δώσεις μου κάποιες βασικές οδηγίες
+    - πώς μπορείς να με βοηθήσεις να διαλέξω ταινία;
+    - χρειάζομαι κάποιες οδηγίες αρχικά
+
+- intent: search_by_actor
+  examples: |
+    - έχεις να προτείνεις κάτι καλό με [DiCaprio](actor_name);
+    - θυμησέ μου αυτήν με τον [John Travolta](actor_name) και την [Uma Thurman](actor_name)
+    - βρες μου ταινίες με τον [Johny Depp](actor_name)
+    - ψάξε ταινίες με τον [Brad Pitt](actor_name)
+    - ταινίες με την [Meryl Streep](actor_name)
+    - προτεινέ μου ταινίες με την [Jennifer Lawrence](actor_name)
+    - καμιά κλασική με τον [Robert De Niro](actor_name);
+    - ψάξε μου ταινίες με τον [Daniel Day-Lewis](actor_name)
+    - θέλω καμία ταινία με την [Ingrid Bergman](actor_name)
+    - υπάρχει κάτι καλό με τον [Adam Driver](actor_name)
+
+- intent: search_by_director
+  examples: |
+    - πες καμιά ταινία του [Quentin Tarantino](director_name)
+    - βρες μου κάτι από [Ridley Scott](director_name)
+    - πες μου ταινίες από τον [Oliver Stone](director_name)
+    - βρες μου τις ταινίες του [Antonioni](director_name)
+    - πες μου τι έχει σκηνοθετήσει ο [Kurosawa](director_name)
+    - θυμισέ μου τις ταινίες του [Alfonso Cuarón](director_name)
+    - για απόψε θέλω κάτι από [Agnes Varda](director_name)
+    - καμιά καλή ιδέα από [Francis Ford Coppola](director_name)
+    - προτεινέ μου κάτι από [Stanley Kubrick](director_name)
+    - βρες μου τις ταινίες του [Guy Ritchie](director_name)
+    - απόψε έχω όρεξη για κουλτούρα, ψάξε λίγο για [Tarkovsky](director_name)
+    - μου βρίσκεις κανένα θρίλερ από [Hitchcock](director_name)
+    - θα έβλεπα ευχάριστα [Martin Scorcese](director_name)
+    - θέλω κάτι καλό, καμία του [Ingmar Bergman](director_name)
+    - [Oliver Stone](director_name)
+    - κάτι σε σκηνοθεσία [Guillermo del Toro](director_name)
+
+- intent: release_year
+  examples: |
+    - πότε βγήκε το [Alien](movie_title);
+    - ποια χρονιά κυκλοφόρησε το [Pulp Fiction](movie_title);
+    - θυμισέ μου πότε βγήκε το [The Matrix](movie_title)
+    - ποια χρονιά βρήκε το [Thelma & Louise](movie_title)
+
+- intent: plot_movie
+  examples: |
+    - τι υπόθεση έχει το [Kramer vs Kramer](movie_title);
+    - πες μου το στόρι του [Pulp Fiction](movie_title);
+    - ποια είναι η πλοκή του [The Matrix](movie_title);
+    - βρες μου την πλοκή του [The Shining](movie_title)
+    - θυμισέ μου τι γίνεται στο [Fight Club](movie_title)
+    
+- intent: rating_movie
+  examples: |
+    - ποια είναι η βαθμολογία του [Kramer vs Kramer](movie_title);
+    - πώς αξιολογείται το [Pulp Fiction](movie_title);
+    - τι βαθμολογία έχει πάρει το [The Matrix](movie_title);
+    - τι βαθμολογία έχει δοθεί [The Shining](movie_title);
+    - πώς έχει βαθμολογηθεί το [Fight Club](movie_title);
+
+- intent: popularity_year
+  examples: |
+    - ποιες ήταν οι πιο δημοφιλείς ταινίες του [2021](release_date);
+    - ποιες ταινίες ήταν πιο δημοφιλείς το [1990](release_date);
+    - πες τις πιο δημοφιλείς ταινίες για το [2000](release_date)
+
+- intent: movie_director
+  examples: |
+    - ποιος σκηνοθέτησε το [Kramer vs Kramer](movie_title);
+    - ποιος είναι ο σκηνοθέτης του [Pulp Fiction](movie_title);
+    - ποιανού είναι το [The Matrix](movie_title);
+    - ποιος σκηνοθετεί το [The Shining](movie_title);
+    - μπορείς να μου βρεις τον σκηνοθέτη του [Fight Club](movie_title);
+
+- intent: movie_actors
+  examples: |
+    - ποιοι παίζουν στο [Kramer vs Kramer](movie_title);
+    - μου θυμίζεις ποιοι παίζουν στο [Pulp Fiction](movie_title);
+    - ποιοι ηθοποιοί παίζουν στο [The Matrix](movie_title);
+    - για πες, ποιοι πρωταγωνιστούν [The Shining](movie_title);
+    - μπορείς να μου βρεις τους ηθοποιούς του [Fight Club](movie_title);
+
+- intent: similar_movies
+  examples: |
+    - μου άρεσε πολύ το [Kramer vs Kramer](movie_title), έχεις να προτείνεις κάτι σχετικό;
+    - θέλω κάτι αντίστοιχο του [Pulp Fiction](movie_title)
+    - υπάρχουν ταινίες στο στυλ του [The Matrix](movie_title);
+    - κανένα καλό θρίλερ σαν το [The Shining](movie_title);
+    - μπορείς να μου βρεις μια ταινία στο ύφος του [Fight Club](movie_title);
+    - μου βρίσκεις κάτι σαν το [Parasite](movie_title)
+
+- regex: release_date
+  examples: |
+    - [0-9]{4}

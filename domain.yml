@@ -1,0 +1,89 @@
+version: "2.0"
+
+intents:
+  - greet
+  - accept_n_thank
+  - no_extra_info_n_goodbye
+  - get_directions
+  - search_by_actor
+  - search_by_director
+  - release_year
+  - plot_movie
+  - rating_movie
+  - popularity_year
+  - movie_director
+  - movie_actors
+  - similar_movies
+entities:
+  - director_name
+  - actor_name
+  - movie_title
+  - release_date
+slots:
+  director_name:
+    type: text
+  actor_name:
+    type: text
+  movie_title:
+    type: text
+  release_date:
+    type: text
+responses:
+  utter_greet_n_elicit:
+  - text: γεια σου, σινεφίλ, είμαι το σίνεμποτ, τι ψάχνεις σήμερα;
+  utter_directions:
+  - text: λοιπόν, μπορώ να σου βρω ταινίες με βάση το όνομα ενός σκηνοθέτη ή κάποιου/-ας ηθοποιού.
+        Επίσης, με βάση τον τίτλο μιας ταινίας μπορώ να βρω την ημερομηνία κυκλοφορίας της, 
+        τη βαθμολογία της, τους πρωταγωνιστές, τον σκηνοθέτη ή/και την πλοκή της, 
+        καθώς και παρόμοιες ταινίες με αυτήν
+        μπορώ επίσης να βρω τις πιο δημοφιλείς ταινίες με βάση μια χρονολογία
+        Προσοχή, για να ψάξεις κάτι από αυτά μην ξεχνάς να το γράφεις με λατινικούς χαρακτήρες!
+  utter_extra_info:
+  - text: χρειάζεσαι κάτι ακόμα;
+  utter_goodbye:
+  - text: γεια σου, σινεφίλ, τα ξαναλέμε!
+  utter_search_movie_by_actor:
+  - text: ψάχνω για ταινίες με τον/την {actor_name}
+  utter_search_movie_by_director:
+  - text: ψάχνω για ταινίες του/της {director_name}
+  utter_search_release_year:
+  - text: ψάχνω να βρω πότε βγήκε στις αίθουσες το {movie_title}
+  utter_search_plot:
+  - text: ψάχνω την πλοκή του {movie_title}
+  utter_search_rating:
+  - text: ψάχνω τη βαθμολογία του {movie_title}
+  utter_search_popularity_by_year:
+  - text: ψάχνω δημοφιλείς ταινίες του {release_date}
+  utter_search_movie_director:
+  - text: ψάχνω τον/την σκηνοθέτη του {movie_title}
+  utter_search_movie_actors:
+  - text: ψάχνω τους/τις ηθοποιούς που παίζουν στο {movie_title}
+  utter_search_similar_movies:
+  - text: ψάχνω παρόμοιες ταινίες με το {movie_title}
+actions:
+  - utter_greet_n_elicit
+  - utter_directions
+  - utter_extra_info
+  - utter_goodbye
+  - utter_search_movie_by_actor
+  - utter_search_movie_by_director
+  - utter_search_release_year
+  - utter_search_plot
+  - utter_search_rating
+  - utter_search_popularity_by_year
+  - utter_search_movie_director
+  - utter_search_movie_actors
+  - utter_search_similar_movies
+  - action_search_movie_by_actor
+  - action_search_movie_by_director
+  - action_search_release_year
+  - action_search_plot
+  - action_search_rating
+  - action_search_popularity_by_year
+  - action_search_movie_director
+  - action_search_movie_actors
+  - action_search_similar_movies
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,373 @@
+version: "2.0"
+
+stories:
+- story: greeting
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+
+- story: instructions
+  steps:
+  - intent: get_directions
+  - action: utter_directions
+
+- story: accept
+  steps:
+  - intent: accept_n_thank
+  - action: utter_extra_info
+
+- story: goodbye
+  steps:
+  - intent: no_extra_info_n_goodbye
+  - action: utter_goodbye
+
+- story: search movie by actor
+  steps:
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+
+- story: search movie by director
+  steps:
+  - intent: search_by_director
+  - action: utter_search_movie_by_director
+  - action: action_search_movie_by_director
+
+- story: search release year
+  steps:
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+
+- story: search plot
+  steps:
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+
+- story: search rating
+  steps:
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+
+- story: search popular year
+  steps:
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+
+- story: search director
+  steps:
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+
+- story: search actors
+  steps:
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+
+- story: search similar
+  steps:
+  - intent: similar_movies
+  - action: utter_search_similar_movies
+  - action: action_search_similar_movies
+
+- story: accept path 1
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_director
+  - action: utter_search_movie_by_director
+  - action: action_search_movie_by_director
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: no_extra_info_n_goodbye
+  - action: utter_goodbye
+
+- story: accept path 2
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: no_extra_info_n_goodbye
+  - action: utter_goodbye
+
+- story: accept path 3
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: no_extra_info_n_goodbye
+  - action: utter_goodbye
+
+- story: accept path 4
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: similar_movies
+  - action: utter_search_similar_movies
+  - action: utter_search_similar_movies
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: no_extra_info_n_goodbye
+  - action: utter_goodbye
+
+
+- story: accept path 5
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_director
+  - action: utter_search_movie_by_director
+  - action: action_search_movie_by_director
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+  - intent: accept_n_thank
+  - action: utter_goodbye
+
+- story: accept path 6
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+
+- story: accept path 7
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_director
+  - action: utter_search_movie_by_director
+  - action: action_search_movie_by_director
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+
+- story: accept path 8
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_director
+  - action: utter_search_movie_by_director
+  - action: action_search_movie_by_director
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+
+- story: accept path 9
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: search_by_actor
+  - action: utter_search_movie_by_actor
+  - action: action_search_movie_by_actor
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+
+- story: accept path 10
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  
+
+- story: accept path 11
+  steps:
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: rating_movie
+  - action: utter_search_rating
+  - action: action_search_rating
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+
+- story: accept path 12
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+
+- story: accept path 13
+  steps:
+  - intent: greet
+  - action: utter_greet_n_elicit
+  - intent: get_directions
+  - action: utter_directions
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: accept_n_thank
+  - action: utter_extra_info
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: release_year
+  - action: utter_search_release_year
+  - action: action_search_release_year
+
+- story: accept path 14
+  steps:
+  - intent: popularity_year
+  - action: utter_search_popularity_by_year
+  - action: action_search_popularity_by_year
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: movie_director
+  - action: utter_search_movie_director
+  - action: action_search_movie_director
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
+  - intent: similar_movies
+  - action: utter_search_similar_movies
+  - action: action_search_similar_movies
+
+- story: accept path 15
+  steps:
+  - intent: plot_movie
+  - action: utter_search_plot
+  - action: action_search_plot
+  - intent: similar_movies
+  - action: utter_search_similar_movies
+  - action: action_search_similar_movies
+  - intent: movie_actors
+  - action: utter_search_movie_actors
+  - action: action_search_movie_actors
