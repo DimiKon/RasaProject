@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- lookup: director_name
+- lookup: movie_title
   examples: |
     - Joker
     - Chinatown
