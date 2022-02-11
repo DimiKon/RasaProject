@@ -1,150 +1,41 @@
-Alfred Hitchcock
-Stanley Kubrick
-Ingmar Bergman
-Yasujirô Ozu
-Federico Fellini
-Hayao Miyazaki
-Roman Polanski
-Martin Scorsese
-Francis Ford Coppola
-Billy Wilder
-Andrei Tarkovsky
-Orson Welles
-John Ford
-Michelangelo Antonioni
-Akira Kurosawa
-François Truffaut
-Jean Renoir
-Paul Thomas Anderson
-Ethan Coen
-Joel Coen
-Jean-Luc Godard
-Max Ophüls
-David Lynch
-Carl Theodor Dreyer
-Sergio Leone
-Fritz Lang
-Kar-Wai Wong
-Sergei Eisenstein
-Terrence Malick
-F.W. Murnau
-Joseph von Sternberg
-Woody Allen
-Steven Spielberg
-Howard Hawks
-The Coen Brothers
-Luis Bunuel
-Roberto Rossellini
-David Lean
-Robert Altman
-Michael Powell
-David Cronenberg
-Jim Jarmusch
-Billy Wilder
-Vittorio De Sica
-David Fincher
-Krzysztof Kieslowski
-Spike Lee
-Guy Ritchie
-Quentin Tarantino
-Rainer Werner Fassbinder
-Bernardo Bertolucci
-Ridley Scott
-Alfonso Cuarón
-Lars von Trier
-Robert Bresson
-Agnes Varda
-Wes Anderson
-Bela Tarr
-Michael Haneke
-John Cassavetes
-Nicholas Ray
-James Cameron
-Clint Eastwood
-Charlie Chaplin
-Sofia Coppola
-The Dardenne Brothers
-Oliver Stone
-Darren Aronofsky
-Wim Wenders
-Pedro Almodovar
-Alejandro G. Iñárritu
-Christopher Nolan
-Elia Kazan
-Guillermo del Toro
-Pier Paolo Pasolini
-Ken Loach
-Jean Cocteau
-Jean Vigo
-Spike Jonze
-Warren Beatty
-Satoshi Kon
-Fred Zinnemann
-Tony Richardson
-Zhangke Jia
-Joseph Lewis
-John Sayles
-Danny Boyle
-Cristian Mungiu
-Peter Bogdanovich
-Abel Ferrara
-Robert Rossen
-Kelly Reichardt
-Budd Boetticher
-The Wachowskis’
-Aki Kaurismäki
-Sergio Corbucci
-Andrew Dominik
-Nicolas Winding Refn
-Rouben Mamoulian
-Pawel Pawlikowski
-Emir Kusturica
-Yorgos Lanthimos
-Leos Carax
-Masaki Kobayashi
-Alejandro Jodorowsky
-David O. Russell
-John Sturges
-René Clément
-Gaspar Noé
-Damien Chazelle
-Paul Greengrass
-Barry Levinson
-Ari Aster
-László Nemes
-Bong Joon Ho
-Sydney Pollack
-Denis Villeneuve
-Chan-wook Park
-Barry Jenkins
-Paul Verhoeven
-George Roy Hill
-The Safdie Brothers
-Joanna Hogg
-Paolo Sorrentino
-Xavier Dolan
-Ryan Coogler
-Luca Guadagnino
-Jack Clayton
-Lewis Milestone
-Franklin Schaffner
-Jonathan Glazer
-Edgar Wright
-Carroll Ballard
-Tom Tykwer
-Claire Denis
-Asghar Farhadi
-Lawrence Kasdan
-Kathryn Bigelow
-Rob Reiner
-Laurence Olivier
-Trey Edward Shults
-Greta Gerwig
-Robert Eggers
-Derek Cianfrance
-Tom Hooper
-Bennett Miller
-Jeff Nichols
-Kenneth Lonergan
-Giuseppe Tornatore
-Frank Darabont
+version: "2.0"
+nlu:
+- lookup: director_name
+  examples: |
+    - Alfred Hitchcock
+    - Stanley Kubrick
+    - Ingmar Bergman
+    - Yasujirô Ozu
+    - Federico Fellini
+    - Hayao Miyazaki
+    - Roman Polanski
+    - Martin Scorsese
+    - Francis Ford Coppola
+    - Billy Wilder
+    - Andrei Tarkovsky
+    - Orson Welles
+    - John Ford
+    - Michelangelo Antonioni
+    - Akira Kurosawa
+    - François Truffaut
+    - Jean Renoir
+    - Paul Thomas Anderson
+    - Ethan Coen
+    - Joel Coen
+    - Jean-Luc Godard
+    - Max Ophüls
+    - David Lynch
+    - Carl Theodor Dreyer
+    - Sergio Leone
+    - Fritz Lang
+    - Kar-Wai Wong
+    - Sergei Eisenstein
+    - Terrence Malick
+    - F.W. Murnau
+    - Joseph von Sternberg
+    - Woody Allen
+    - Steven Spielberg
+    - Howard Hawks
+    - The Coen Brothers
+    - Luis Bunuel
+    - Roberto Rossellini
