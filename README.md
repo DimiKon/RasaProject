@@ -5,7 +5,7 @@
 
 - CINEbot can search & find:
     - Movies by director
-    - Movies by actor
+    - Movies by actor(s)
     - The release date of a movie given its title
     - The plot of a movie given its title
     - A movie's rating
