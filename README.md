@@ -6,8 +6,8 @@
 - CINEbot can search & find:
     - Movies by director
     - Movies by actor(s)
-    - The release date of a movie given its title
-    - The plot of a movie given its title
+    - The release date of a movie given it's title
+    - The plot of a movie given it's title
     - A movie's rating
     - Popular movies per year
 
