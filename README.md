@@ -1,4 +1,4 @@
-![CINEbot](https://github.com/DimiKon/RasaProject/blob/master/cine.jpeg)
+![CINEbot](https://github.com/DimiKon/RasaProject/blob/main/cine.jpeg)
 # CINEbot
 
 ## A baseline conversation bot to explore Rasa, open source machine learning framework
